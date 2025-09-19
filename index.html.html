@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gyányi Tibor – Ajánlói kód: OCZUO</title>
+  <meta name="description" content="Gyors és kényelmes online bankszámlanyitás a Gránit Banknál. Használd Gyányi Tibor ajánlói kódját: OCZUO, és indítsd el a folyamatot néhány perc alatt.">
+  <style>
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f6f9fc;color:#222;line-height:1.5}
+    header{background:#0b63d6;color:#fff;padding:20px;text-align:center}
+    header h1{margin:0;font-size:24px}
+    .container{max-width:800px;margin:30px auto;padding:20px;background:#fff;border-radius:12px;box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    h2{color:#0b63d6}
+    .btn{display:inline-block;background:#0b63d6;color:#fff;text-decoration:none;padding:12px 20px;border-radius:8px;font-weight:bold;margin-top:10px;cursor:pointer}
+    .btn:hover{background:#094ea8}
+    .btn-ghost{background:#eef4ff;color:#0b63d6;border:1px solid #0b63d6}
+    .btn-ghost:hover{background:#dbe9ff}
+    .code{font-size:20px;font-weight:bold;color:#0b63d6;background:#eef4ff;padding:6px 10px;border-radius:6px;display:inline-block;margin-right:10px}
+    footer{text-align:center;color:#666;font-size:14px;margin:30px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gyányi Tibor ajánlása</h1>
+    <p>Ajánlói kód: <span class="code" id="refCode">OCZUO</span></p>
+    <button class="btn btn-ghost" id="copyBtn">Kód másolása</button>
+  </header>
+
+  <div class="container">
+    <h2>Nyiss bankszámlát online</h2>
+    <p>
+      A számlanyitás csak néhány percet vesz igénybe, és teljes egészében online elvégezhető.  
+      Az alábbi linken indulhatsz, ahol megtalálod a feltételeket is:
+    </p>
+
+    <p>
+      <a href="https://scportal.granitbank.hu/onlineszamlanyitas/ajanlokod?referralCode=OCZUO" target="_blank" class="btn">
+        Számlanyitás indítása
+      </a>
+    </p>
+
+    <h3>Ajánlói kód</h3>
+    <p>
+      Használd a következő kódot: <span class="code" id="refCode2">OCZUO</span>
+      <button class="btn btn-ghost" id="copyBtn2">Kód másolása</button>
+    </p>
+  </div>
+
+  <footer>
+    © Gyányi Tibor – Ajánlói kód: OCZUO
+  </footer>
+
+  <script>
+    function copyCode(id) {
+      const code = "OCZUO";
+      navigator.clipboard.writeText(code).then(() => {
+        const btn = document.getElementById(id);
+        const oldText = btn.textContent;
+        btn.textContent = "Másolva ✓";
+        setTimeout(() => btn.textContent = oldText, 2000);
+      });
+    }
+    document.getElementById("copyBtn").addEventListener("click", () => copyCode("copyBtn"));
+    document.getElementById("copyBtn2").addEventListener("click", () => copyCode("copyBtn2"));
+  </script>
+</body>
+</html>
